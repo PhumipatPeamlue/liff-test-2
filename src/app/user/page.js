@@ -5,7 +5,7 @@ export default function UserHome() {
 
     useEffect(() => {
         const fetchProfile = async () => {
-            const resp = await fetch("http://localhost:8081/user/profile", {
+            const resp = await fetch("https://2f24-184-22-19-255.ngrok-free.app/user/profile", {
                 'method': 'GET',
                 'credentials': 'include'
             })

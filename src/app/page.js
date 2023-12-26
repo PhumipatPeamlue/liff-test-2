@@ -12,7 +12,7 @@ const Home = () => {
       setIsLoading(true);
 
       // Make a request to your Gin backend endpoint that triggers Line Login
-      const response = await fetch("http://localhost:8081/line/login");
+      const response = await fetch("https://2f24-184-22-19-255.ngrok-free.app/line/login");
       const data = await response.json()
         window.location.href = data.url
     } catch (error) {
